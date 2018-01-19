@@ -161,7 +161,7 @@ before_test:
   - "powershell dev\\appveyor\\sql-server-activate-tcp-fixed-port.ps1"
 
 test_script:
-  - "py.test --debug"
+  - "py.test --junitxml=junit.xml"
 
 after_test:
   # Preserve tests results JUnit XML file
