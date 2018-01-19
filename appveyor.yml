@@ -24,139 +24,139 @@ environment:
     secure: Y7MrC6olgmbDxcsUpIP2zUCfYkbko6LGtDmgVDwqkT8=
 
   matrix:
-    - PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.9"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2008"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.3"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python35"
-      PYTHON_VERSION: "3.5.0"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python36"
-      PYTHON_VERSION: "3.6.1"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python27-x64"
-      PYTHON_VERSION: "2.7.9"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2008"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python33-x64"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.3"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python35-x64"
-      PYTHON_VERSION: "3.5.0"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2008R2SP2"
-
-    - PYTHON: "C:\\Python36-x64"
-      PYTHON_VERSION: "3.6.1"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2008R2SP2"
-
-
-    - PYTHON: "C:\\Python27"
-      PYTHON_VERSION: "2.7.9"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2008"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python33"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.3"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python35"
-      PYTHON_VERSION: "3.5.0"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python36"
-      PYTHON_VERSION: "3.6.1"
-      PYTHON_ARCH: "32"
-      ARCH: x86
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python27-x64"
-      PYTHON_VERSION: "2.7.9"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2008"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python33-x64"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.3"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2010"
-      INSTANCENAME: "SQL2012SP1"
-
-    - PYTHON: "C:\\Python35-x64"
-      PYTHON_VERSION: "3.5.0"
-      PYTHON_ARCH: "64"
-      ARCH: x86_64
-      VS_VER: "2015"
-      INSTANCENAME: "SQL2012SP1"
+#    - PYTHON: "C:\\Python27"
+#      PYTHON_VERSION: "2.7.9"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2008"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python33"
+#      PYTHON_VERSION: "3.3.5"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python34"
+#      PYTHON_VERSION: "3.4.3"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python35"
+#      PYTHON_VERSION: "3.5.0"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python36"
+#      PYTHON_VERSION: "3.6.1"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python27-x64"
+#      PYTHON_VERSION: "2.7.9"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2008"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python33-x64"
+#      PYTHON_VERSION: "3.3.5"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python34-x64"
+#      PYTHON_VERSION: "3.4.3"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python35-x64"
+#      PYTHON_VERSION: "3.5.0"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#    - PYTHON: "C:\\Python36-x64"
+#      PYTHON_VERSION: "3.6.1"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2008R2SP2"
+#
+#
+#    - PYTHON: "C:\\Python27"
+#      PYTHON_VERSION: "2.7.9"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2008"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python33"
+#      PYTHON_VERSION: "3.3.5"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python34"
+#      PYTHON_VERSION: "3.4.3"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python35"
+#      PYTHON_VERSION: "3.5.0"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python36"
+#      PYTHON_VERSION: "3.6.1"
+#      PYTHON_ARCH: "32"
+#      ARCH: x86
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python27-x64"
+#      PYTHON_VERSION: "2.7.9"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2008"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python33-x64"
+#      PYTHON_VERSION: "3.3.5"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python34-x64"
+#      PYTHON_VERSION: "3.4.3"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2010"
+#      INSTANCENAME: "SQL2012SP1"
+#
+#    - PYTHON: "C:\\Python35-x64"
+#      PYTHON_VERSION: "3.5.0"
+#      PYTHON_ARCH: "64"
+#      ARCH: x86_64
+#      VS_VER: "2015"
+#      INSTANCENAME: "SQL2012SP1"
 
     - PYTHON: "C:\\Python36-x64"
       PYTHON_VERSION: "3.6.1"
@@ -198,9 +198,9 @@ install:
 
 before_build:
   # OpenSSL
-  - appveyor DownloadFile http://www.npcglib.org/~stathis/downloads/openssl-%OPENSSL_VER%-vs%VS_VER%.7z || (ping -n 10 127.0.0.1 >"nul:" & appveyor DownloadFile http://www.npcglib.org/~stathis/downloads/openssl-%OPENSSL_VER%-vs%VS_VER%.7z)
-  - 7z x openssl-%OPENSSL_VER%-vs%VS_VER%.7z
-  - ren openssl-%OPENSSL_VER%-vs%VS_VER% openssl
+#  - appveyor DownloadFile http://www.npcglib.org/~stathis/downloads/openssl-%OPENSSL_VER%-vs%VS_VER%.7z || (ping -n 10 127.0.0.1 >"nul:" & appveyor DownloadFile http://www.npcglib.org/~stathis/downloads/openssl-%OPENSSL_VER%-vs%VS_VER%.7z)
+#  - 7z x openssl-%OPENSSL_VER%-vs%VS_VER%.7z
+#  - ren openssl-%OPENSSL_VER%-vs%VS_VER% openssl
   # FreeTDS
   - "rmdir /s /q freetds\\vs%VS_VER%_%PYTHON_ARCH% || cmd /c \"exit /b 0\""
   - appveyor DownloadFile https://github.com/ramiro/freetds/releases/download/v%FREETDS_VER%/freetds-v%FREETDS_VER%-win-%ARCH%-vs%VS_VER%.zip
