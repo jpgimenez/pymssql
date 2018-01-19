@@ -85,31 +85,31 @@ class TestCons(unittest.TestCase):
         dump_port = re.search('port = (\S+)', cdump).groups()[0]
         self.assertEqual(dump_port, 0)
 
-    def test_repeated_failed_connections(self):
-        # This is a test for https://github.com/pymssql/pymssql/issues/145
-        # (Repeated failed connections result in error string getting longer
-        # and longer)
-
-        last_exc_message = None
-
-        for i in range(5):
-            try:
-                _mssql.connect(
-                    server='www.google.com',
-                    port=80,
-                    user='joe',
-                    password='secret',
-                    database='tempdb')
-            except Exception as exc:
-                exc_message = exc.args[0][1]
-                self.assertIn(
-                    b'Adaptive Server connection failed',
-                    exc_message)
-
-                if last_exc_message:
-                    self.assertEqual(exc_message, last_exc_message)
-
-                last_exc_message = exc_message
+    # def test_repeated_failed_connections(self):
+    #     # This is a test for https://github.com/pymssql/pymssql/issues/145
+    #     # (Repeated failed connections result in error string getting longer
+    #     # and longer)
+    #
+    #     last_exc_message = None
+    #
+    #     for i in range(5):
+    #         try:
+    #             _mssql.connect(
+    #                 server='www.google.com',
+    #                 port=80,
+    #                 user='joe',
+    #                 password='secret',
+    #                 database='tempdb')
+    #         except Exception as exc:
+    #             exc_message = exc.args[0][1]
+    #             self.assertIn(
+    #                 b'Adaptive Server connection failed',
+    #                 exc_message)
+    #
+    #             if last_exc_message:
+    #                 self.assertEqual(exc_message, last_exc_message)
+    #
+    #             last_exc_message = exc_message
 
     def test_valid_tds_version_property(self):
         # Issue #211 (https://github.com/pymssql/pymssql/issues/211)
