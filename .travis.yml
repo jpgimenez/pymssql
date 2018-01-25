@@ -18,8 +18,7 @@ before_install:
 - pip --version
 - travis_retry pip install --use-wheel Cython
 install:
-- . dev/build_freetds_linux.sh
-- if [[ $FREETDS_VERSION == '1.00' ]]; then export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1; fi
+- if [[ $FREETDS_VERSION == '1.00' ]]; then dev/build_freetds_linux.sh; export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1; fi
 - python setup.py develop
 script:
 - . dev/travis_env.sh
