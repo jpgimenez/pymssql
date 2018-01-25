@@ -7,6 +7,7 @@ FREETDS="ftp://ftp.freetds.org/pub/freetds/"
 STABLE="$FREETDS/stable/freetds-patched.tar.gz"
 TEMPDIR=`mktemp -d`
 OLD_DIR=`pwd`
+OLD_CFLAGS=$CFLAGS
 
 # Retrieve the sources and extract them into a temporary directory
 wget $STABLE -O $TEMPDIR/freetds.tgz
@@ -66,3 +67,4 @@ mv bin etc include lib $OLD_DIR/freetds/nix_32/
 # Cleanup
 cd $OLD_DIR
 rm -rf $TEMPDIR
+export CFLAGS=$OLD_CFLAGS
