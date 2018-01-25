@@ -64,4 +64,5 @@ mkdir -p $OLD_DIR/freetds/nix_32
 mv bin etc include lib $OLD_DIR/freetds/nix_32/
 
 # Cleanup
+cd $OLD_DIR
 rm -rf $TEMPDIR
