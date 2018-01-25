@@ -13,19 +13,18 @@ before_install:
 - travis_retry pip install --upgrade pip setuptools  # Upgrade pip and setuptools to get ones with `wheel` support
 - travis_retry pip install pytest SQLAlchemy
 - travis_retry pip install Sphinx sphinx-rtd-theme
-- travis_retry pip install cibuildwheel
 - pip --version
 - travis_retry pip install --use-wheel Cython
 install:
-- if [[ $FREETDS_VERSION == '0.95' ]]; then export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1; fi
+- . dev/build_freetds_linux.sh
+- if [[ $FREETDS_VERSION == '1.00' ]]; then export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1; fi
 - python setup.py develop
 script:
 - . dev/travis_env.sh
 - echo "\$PYMSSQL_TEST_DATABASE = \"$PYMSSQL_TEST_DATABASE\""
 - export TDSVER=7.1
-# - py.test -v
-# - cd docs && test -z "$(make SPHINXOPTS='-q' html 2>&1 | egrep -w 'SEVERE:|ERROR:')"
-- cibuildwheel --output-dir wheelhouse
+- py.test -v
+- cd docs && test -z "$(make SPHINXOPTS='-q' html 2>&1 | egrep -w 'SEVERE:|ERROR:')"
 - cd ..
 branches:
   except:
@@ -38,7 +37,7 @@ env:
   - secure: bMxRxhLnzxHyouQeQE6Ap8e6m70j5J2WKxcjRITKXEPN6UFWL+h+/EJbGKTG33g7ETKiCez8zyAtXQy8oGeHVbjCuvUhSIolI+wm/H7Rlo7FeoBH/wtbLutOsWyfYLqThc4MQZB/GDN/szzlN+H7SI4ciXSpaE5qWMXQIHrvYzg=
   matrix:
   - FREETDS_VERSION=0.91
-  - FREETDS_VERSION=0.95
+  - FREETDS_VERSION=1.00
 deploy:
   provider: pypi
   on:
