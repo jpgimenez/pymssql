@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
     - freetds-dev
+    - libc6-dev-i386
 before_install:
 - travis_retry pip install --upgrade pip setuptools  # Upgrade pip and setuptools to get ones with `wheel` support
 - travis_retry pip install pytest SQLAlchemy
