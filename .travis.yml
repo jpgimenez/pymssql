@@ -27,6 +27,8 @@ script:
 - py.test -v
 - cd docs && test -z "$(make SPHINXOPTS='-q' html 2>&1 | egrep -w 'SEVERE:|ERROR:')"
 - cd ..
+- pip install cibuildwheel==0.7.0
+- cibuildwheel --output-dir wheelhouse
 branches:
   except:
   - 1.0
