@@ -5,6 +5,12 @@ python:
 - 3.4
 - 3.5
 - 3.6
+matrix:
+  include:
+    - sudo: required
+      services:
+        - docker
+      env: PIP=pip
 addons:
   apt:
     packages:
