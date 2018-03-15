@@ -47,6 +47,13 @@ jobs:
       script:
         - pip install cibuildwheel==0.7.0
         - cibuildwheel --output-dir wheelhouse
+      language: python
+      python:
+      - 2.7
+      - 3.3
+      - 3.4
+      - 3.5
+      - 3.6
       env: FREETDS_VERSION=1.00
 deploy:
   provider: pypi
